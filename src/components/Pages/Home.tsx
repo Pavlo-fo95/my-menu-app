@@ -1,13 +1,13 @@
 import React from 'react';
+import MenuComponent from './MenuComponent';  
 
 const Home: React.FC = () => {
-    return (
-        <div className="page">
-            <h2>Главная страница</h2>
-            <p>Добро пожаловать на главную страницу!</p>
-        </div>
-    );
-}
+  return (
+    <div>
+      <h1>Главная страница</h1>
+      <MenuComponent />
+    </div>
+  );
+};
 
 export default Home;
-export {};
