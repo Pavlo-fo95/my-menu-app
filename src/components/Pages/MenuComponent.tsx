@@ -10,7 +10,7 @@ interface CurrencyItem {
 const MenuComponent: React.FC = () => {
   const [menuItems, setMenuItems] = useState<CurrencyItem[]>([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 10;
+  const itemsPerPage = 40;
 
   useEffect(() => {
     const fetchMenuItems = async () => {

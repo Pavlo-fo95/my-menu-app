@@ -16,7 +16,6 @@ const App: React.FC = () => {
                     <NavLink to="/questions" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Вопросы 37</NavLink>
                     <NavLink to="/videos" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Видео 9</NavLink>
                     <NavLink to="/together" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Покупают вместе</NavLink>
-                    <NavLink to="/contact" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Контакты</NavLink>
                 </nav>
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -25,7 +24,6 @@ const App: React.FC = () => {
                     <Route path="/questions" element={<div>Вопросы 37</div>} />
                     <Route path="/videos" element={<div>Видео 9</div>} />
                     <Route path="/together" element={<div>Покупают вместе</div>} />
-                    <Route path="/contact" element={<Contact />} />
                 </Routes>
             </div>
         </Router>
